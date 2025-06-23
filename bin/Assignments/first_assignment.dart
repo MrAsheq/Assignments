@@ -1,10 +1,10 @@
 abstract class Vehicle{
   late int _speed;
   void move();
-  void setSpeed(int speed){
-    _speed = speed;
+  set setSpeed(int speed){
+    _speed= speed;
   }
-  int get speed => _speed;
+  int get speed=> _speed;
 }
 class Car extends Vehicle{
   @override
@@ -13,7 +13,7 @@ class Car extends Vehicle{
   }
 }
 main(){
-  Car bmw= Car();
-  bmw.setSpeed(120);
-  bmw.move();
+  Car ford= Car();
+  ford.setSpeed = 200;
+  ford.move();
 }
